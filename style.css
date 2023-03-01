@@ -92,11 +92,16 @@ header {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 main {
+  padding-bottom: 1%;
   background: #fff;
   grid-column-start: 2;
   grid-column-end: 4;
-  height: 100vh;
+  height: 88vh;
   overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 main::-webkit-scrollbar {
   display: none;
@@ -397,4 +402,97 @@ tr {
 }
 #facebook{
   height: 100%;
+}
+
+
+
+
+
+#content-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 60%;
+  height: 50%;
+}
+#profile {
+  display: flex;
+  width: 100%;
+  height: 15%;
+  border: 1px solid black;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+#profile-info {
+  margin-left: 3%;
+  padding: 0;
+  height: min-content;
+  align-self: center;
+}
+#title-profile,
+#time-post {
+  padding: 0;
+  margin: 0;
+}
+#content {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  height: 70%;
+  padding: 0 0 1px 0;
+}
+#btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 15%;
+  border: 1px solid black;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+#content-center {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 190px;
+  border: 1px solid black;
+}
+#content-description {
+  margin: 0;
+  padding: 0;
+}
+#img-content {
+  height: 80%;
+  width: 100%;
+}
+#status-info {
+  display: flex;
+  justify-content: space-around;
+}
+#pic-content {
+  height: 90%;
+  margin: 0 1.5% 0 5%;
+  border: 2px dashed black;
+  border-radius: 50%;
+}
+.stats {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stats p{
+  font-size: 60%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.options {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
 }
